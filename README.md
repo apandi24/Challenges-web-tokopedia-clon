@@ -1,5 +1,4 @@
 # Challenges-web-tokopedia-clon
-Referensi : Meniru 
-#webtokopedia.com
+Referensi : Meniru Tampilan Web tokopedia.com
 
-filenya tokped.html
+filenya index ada di tokped.html
