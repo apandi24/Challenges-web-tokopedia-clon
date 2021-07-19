@@ -1,5 +1,5 @@
 # Challenges-web-tokopedia-clon
-Referensi :
+Referensi : Meniru 
 #webtokopedia.com
 
 filenya tokped.html
