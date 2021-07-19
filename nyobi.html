@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tokped</title>
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/fonts.css">
+    <link rel="stylesheet" href="/assets/css/custom.css">
+    <link rel="stylesheet" href="/assets/fontawesome/css/all.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg navbar-white bg-white shadow-sm">
+            <div class="container-fluid">
+              <a class="navbar-brand text-success" href="#">tokopedia</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-secondary" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Kategori
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                  </form>
+                  </ul>
+                  <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"> <i class="fas fa-shopping-cart"></i></a>
+                    </li>
+                   <li class="nav-item">
+                      <a class="nav-link" href="#">|</a>
+                    </li>
+                  
+                    <li class="nav-item">
+                      <a class="nav-link btn btn-outline-success btn-sm rounded-pill mr-2" href="#">Masuk</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link btn btn-success rounded-pill btn-sm" href="#">Daftar</a>
+                    </li>
+                  </ul>
+              </div>
+            </div>
+          </nav>
+          <!-- Akhir navbar -->
+    </div>
+
+    <!-- Konten -->
+    <div class="container">
+      <!-- Carousel slider iklan -->
+        <div class="row mt-3">
+            <div class="col">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="/assets/images/iklan.jpg" class="d-block w-100 " alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="/assets/images/iklan.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="/assets/images/iklan.jpg" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div>
+        </div>
+        <!-- Akhir Carousel Iklan -->
+        <!-- box Kategori Pilihan dan topup -->
+        <div class="row mt-3">
+            <div class="col">
+                <div class="box shadow p-3 mb-5 bg-body rounded">
+                    <div class="box-body bg-white">
+                        <div class="box-item">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="d-flex justify-content-between">
+                                        <h5 class="p-4 flex-start"> <b>Kategori Pilihan</b> </h5>
+                                        <h5 class="p-4 flex-End"> <b>Top Up & Tagihan <span class="text-success">Lihat Semua</span></b> </h5>
+                                    </div>
+                                </div>
+                            </div>
+                           
+                            <div class="row mb-4 m-3">
+                              <div class="col-2 d-flex">
+                                <div class="card mb-3 border rounded">
+                                    <img src="/assets/images/makanan.jpg" class="card-img-top" alt="1">
+                                    <div class="card-body">
+                                      <p class="card-text text-center">Makanan</p>
+                                    </div>
+                                  </div>
+                              </div>
+                              <div class="col-2 d-flex">
+                                <div class="card mb-3 border rounded">
+                                  <img src="/assets/images/figure.jpg" class="card-img-top" alt="1">
+                                  <div class="card-body">
+                                    <p class="card-text text-center">Figure</p>
+                                  </div>
+                                 </div>
+                               </div>
+                              <div class="col-2 d-flex">
+                                <div class="card mb-3 border rounded">
+                                   <img src="/assets/images/tas.jpeg" class="card-img-top" alt="1">
+                                   <div class="card-body">
+                                     <p class="card-text text-center">Tas Selempang</p>
+                                   </div>
+                                 </div>
+                               </div>        
+                              
+                                <div class="col-6 p-3">
+                                    <div class="box rounded-4">
+                                        <div class="box-body bg-white">
+                                            <div class="box-item">
+                                                <ul class="nav nav-bawah p-2">
+                                                    <li class="nav-item">
+                                                      <a href="" class="nav-link text-secondary"> Pulsa </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                      <a href="" class="nav-link active text-secondary"> Paket Data </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                      <a href="" class="nav-link text-secondary"> Listrik PLN </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                      <a href="" class="nav-link text-secondary"> Flight </a>
+                                                    </li>
+                                                  </ul>
+                                                  <div class="row">
+                                                      <div class="col-5">
+                                                        <div class="mb-3 p-3">
+                                                            <label for="exampleFormControlInput1" class="form-label">No telepon</label>
+                                                            <input type="email" class="form-control form-control-sm" id="exampleFormControlInput1" placeholder="087643356">
+                                                          </div>
+                                                      </div>
+                                                      <div class="col-5">
+                                                        <div class="mb-3 p-3">
+                                                            <label for="exampleFormControlInput1" class="form-label">Nominal </label>
+                                                            <input type="email" class="form-control form-control-sm" id="exampleFormControlInput1" placeholder="">
+                                                          </div>
+                                                      </div>
+                                                      <div class="col-2 mt-4 p-3">
+                                                          <button class="btn btn-secondary disabled">Beli</button>
+                                                      </div>
+
+                                                  </div>
+                                                  
+                                                 
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Akhir Box kategori pilihan & Topup -->
+            </div>
+
+            <!-- row 3 -->
+            <div class="row">
+                <div class="col">
+                    <h5><b>Cari Kategori Apa ?</b></h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <div class="box-sm ">
+                        <div class="box-body overflow-hidden rounded">
+                            <div class="box-item  position-relative">
+                              <div class="media d-flex align-items-sm-center ">
+                                <div>
+                                   <a href="#"><img src="/assets/images/tas.jpeg" class="s-foto rounded-5"  alt="tas">  </a> 
+                                   <h6 class="text-center">Tas</h6>       
+                                </div>
+                              </div>
+                            </div>
+                        
+                      </div>
+                      
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="box-sm ">
+                        <div class="box-body overflow-hidden rounded">
+                            <div class="box-item  position-relative">
+                              <div class="media d-flex align-items-sm-center ">
+                                <div>
+                                   <a href="#"><img src="/assets/images/buku.jpg" class="s-foto rounded-5"  alt="buku">  </a> 
+                                   <h6 class="text-center">Buku</h6>
+                                </div>
+                                
+                              </div>
+                            </div>
+                        
+                      </div>
+                      
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="box-sm ">
+                        <div class="box-body overflow-hidden rounded">
+                            <div class="box-item  position-relative">
+                              <div class="media d-flex align-items-sm-center ">
+                                <div>
+                                   <a href="#"><img src="/assets/images/fashion.jpg" class="s-foto rounded-5"  alt="buku">  </a> 
+                                   <h6 class="text-center">Fashion</h6>
+                                </div>
+                              </div>
+                            </div>
+                         </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="box-sm ">
+                        <div class="box-body overflow-hidden rounded">
+                            <div class="box-item  position-relative">
+                              <div class="media d-flex align-items-sm-center ">
+                                <div>
+                                   <a href="#"><img src="/assets/images/olahraga.jpeg" class="s-foto rounded-5"  alt="buku">  </a> 
+                                   <h6 class="text-center">Olahraga</h6>
+                                </div>
+                              </div>
+                            </div>
+                         </div>
+                    </div>
+                </div>
+            </div>
+<!-- akhir row3 -->
+
+<!-- awal row 4 -->
+            <div class="row mt-5">
+                <div class="col-3">
+                    <div class="box-sm ">
+                        <div class="box-body overflow-hidden rounded">
+                            <div class="box-item  position-relative">
+                              <div class="media d-flex align-items-sm-center ">
+                                <div>
+                                   <a href="#"><img src="/assets/images/dapur.jpg" class="s-foto rounded-5"  alt="tas">  </a> 
+                                   <h6 class="text-center">Dapur</h6>       
+                                </div>
+                              </div>
+                            </div>
+                        
+                      </div>
+                      
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="box-sm ">
+                        <div class="box-body overflow-hidden rounded">
+                            <div class="box-item  position-relative">
+                              <div class="media d-flex align-items-sm-center ">
+                                <div>
+                                   <a href="#"><img src="/assets/images/elektronik.jpg" class="s-foto rounded-5"  alt="buku">  </a> 
+                                   <h6 class="text-center">Elektronik</h6>
+                                </div>
+                                
+                              </div>
+                            </div>
+                        
+                      </div>
+                      
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="box-sm ">
+                        <div class="box-body overflow-hidden rounded">
+                            <div class="box-item  position-relative">
+                              <div class="media d-flex align-items-sm-center ">
+                                <div>
+                                   <a href="#"><img src="/assets/images/perawatan.png" class="s-foto rounded-5"  alt="buku">  </a> 
+                                   <h6 class="text-center">Perawatan tubuh</h6>
+                                </div>
+                              </div>
+                            </div>
+                         </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="box-sm ">
+                        <div class="box-body overflow-hidden rounded">
+                            <div class="box-item  position-relative">
+                              <div class="media d-flex align-items-sm-center ">
+                                <div>
+                                   <a href="#"><img src="/assets/images/toys.jpg" class="s-foto rounded-5"  alt="buku">  </a> 
+                                   <h6 class="text-center">Mainan & Hobi</h6>
+                                </div>
+                              </div>
+                            </div>
+                         </div>
+                    </div>
+                </div>
+            </div>
+<!-- akhir row 4 -->
+<div class="row mt-5">
+    <div class="col">
+        <h5><b>Terlaris di Masker</b> <span class="text-success fs2"> Lihat Semua </span></h5>
+    </div>
+</div>
+
+    <div class="row">
+        <div class="col-3">
+            <div class="card" >
+                <img src="/assets/images/sensi.jpeg" class="card-img-top" alt="sensi">
+                <div class="card-body">
+                  <p class="card-text"></p>
+                </div>
+              </div>
+        </div>
+    </div>
+        </div>
+        <!-- Akhir Konten -->
+    </div>
+
+    <script src="/assets/js/jquery-3.6.0.min.js"></script>
+    <script src="/assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

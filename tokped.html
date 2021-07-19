@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tokped</title>
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/fonts.css">
+    <link rel="stylesheet" href="/assets/css/custom.css">
+    <link rel="stylesheet" href="/assets/fontawesome/css/all.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg navbar-white bg-white shadow-sm">
+            <div class="container-fluid">
+              <a class="navbar-brand text-success" href="#">tokopedia</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbaratas" aria-controls="navbaratas" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbaratas">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-secondary" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Kategori
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Baju</a></li>
+                      <li><a class="dropdown-item" href="#">Celana</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Tas</a></li>
+                    </ul>
+                  </li>
+                  <div class="input-group">
+                    <div class="form-outline">
+                      <input type="search" id="form1" class="form-control" placeholder="Cari disini" />
+                    </div>
+                    <button type="button" class="btn btn-light">
+                      <i class="fas fa-search"></i>
+                    </button>
+                  </div>
+                  </ul>
+                  <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link text-secondary" href="#"> <i class="fas fa-shopping-cart"></i></a>
+                    </li>
+                   <li class="nav-item">
+                      <a class="nav-link text-secondary" href="#">|</a>
+                    </li>
+                  
+                    <li class="nav-item me-2">
+                      <a class="nav-link btn btn-outline-success btn-sm rounded ms-2 text-success" href="#">Masuk</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link btn btn-success rounded btn-sm text-white" href="#">Daftar</a>
+                    </li>
+                  </ul>
+              </div>
+            </div>
+          </nav>
+          <!-- Akhir navbar -->
+    </div>
+
+    <!-- Konten -->
+    <div class="container">
+      <!-- Carousel slider iklan -->
+        <div class="row mt-3">
+            <div class="col-sm">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                  <div class="d-flex justify-content-between">
+                    <div class="carousel-indicators flex-start">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                  </div>  
+                  
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="/assets/images/iklan.jpg" class="d-block w-100 img-fluid" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="/assets/images/iklan.jpg" class="d-block w-100 img-fluid" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="/assets/images/iklan.jpg" class="d-block w-100 img-fluid" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div>
+        </div>
+        <!-- Akhir Carousel Iklan -->
+        <!-- box Kategori Pilihan dan topup -->
+        <div class="row mt-3">
+            <div class="col-sm">
+                <div class="box-sm shadow p-3 mb-5 bg-body rounded">
+                    <div class="box-body bg-white">
+                        <div class="box-item">
+                            <div class="row">
+                                <div class="col-sm">
+                                    <div class="d-flex justify-content-between">
+                                        <h5 class="p-4 flex-start"> <b>Kategori Pilihan</b> </h5>
+                                        <h5 class="p-4 flex-center"> <b>Top Up & Tagihan <span class="text-success">Lihat Semua</span></b> </h5>
+                                    </div>
+                                </div>
+                            </div>
+                           
+                            <div class="row mb-4 m-3">
+                              <div class="col-sm-2 d-flex">
+                                <div class="card mb-3 border">
+                                    <img src="/assets/images/makanan.jpg" class="card-img-top img-fluid" alt="1">
+                                    <div class="card-body">
+                                      <p class="card-text text-center">Makanan</p>
+                                    </div>
+                                  </div>
+                              </div>
+                              <div class="col-sm-2 d-flex">
+                                <div class="card mb-3 border">
+                                  <img src="/assets/images/figure.jpg" class="card-img-top img-fluid" alt="1">
+                                  <div class="card-body">
+                                    <p class="card-text text-center">Figure</p>
+                                  </div>
+                                 </div>
+                               </div>
+                              <div class="col-sm-2 d-flex">
+                                <div class="card mb-3 border">
+                                   <img src="/assets/images/tas.jpeg" class="card-img-top img-fluid" alt="1">
+                                   <div class="card-body">
+                                     <p class="card-text text-center">Tas Selempang</p>
+                                   </div>
+                                 </div>
+                               </div>        
+                              
+                                <div class="col-sm-6 p-3">
+                                    <div class="box rounded-4">
+                                        <div class="box-body bg-white">
+                                            <div class="box-item">
+                                                <ul class="nav nav-bawah p-2">
+                                                    <li class="nav-item">
+                                                      <a href="" class="nav-link text-secondary"> Pulsa </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                      <a href="" class="nav-link active text-secondary"> Paket Data </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                      <a href="" class="nav-link text-secondary"> Listrik PLN </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                      <a href="" class="nav-link text-secondary"> Flight </a>
+                                                    </li>
+                                                  </ul>
+                                                  <div class="row">
+                                                      <div class="col-sm-4">
+                                                        <div class="mb-3 p-3">
+                                                            <label for="exampleFormControlInput1" class="form-label">No telepon</label>
+                                                            <input type="text" name="notelepon" class="form-no "  placeholder="087643356">
+                                                          </div>
+                                                      </div>
+                                                      <div class="col-sm-4">
+                                                        <div class="mb-3 p-3">
+                                                            <label for="exampleFormControlInput1" class="form-label">Nominal </label>
+                                                            <select class="form-select" aria-label="Default select example">
+                                                              <option selected>Nominal</option>
+                                                              <option value="1">Rp.10000</option>
+                                                              <option value="2">Rp.200000</option>
+                                                              <option value="3">Rp.3000</option>
+                                                            </select>
+                                                          </div>
+                                                      </div>
+                                                      <div class="col-sm-4 mt-5">
+                                                          <button class="btn btn-secondary disabled">Beli</button>
+                                                      </div>
+
+                                                  </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Akhir Box kategori pilihan & Topup -->
+                <hr>
+                <!-- Row konten laptop -->
+                <div class="row mt-5">
+                  <div class="col-sm">
+                      <h5><b>Kategori Laptop</b> <span class="text-success fs2"> Lihat Semua </span></h5>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-2 d-flex">
+                      <div class="card shadow-sm" >
+                          <img src="/assets/images/laptop.jpg" class="card-img-top img-fluid" alt="sensi">
+                          <div class="card-body">
+                            <h6 class="card-text fs1">
+                              Laptop Asus ZenBook 13 dan 14 Terbaru Resmi
+                            </h6>
+                            <div class="row">
+                              <div class="col-sm-3">
+                                <button class="btn btn-danger btn-sm fs-0">36%</button>
+                              </div>
+                            </div>
+                            <!-- rupiah -->
+                            <div class="row">
+                              <h6 class="fs1">
+                                Rp.6.250.000
+                              </h6>
+                              <h6 class="fs0">Planet Computer</h6>
+                            </div>
+                            <!-- end rupiah -->
+
+                            <!-- Lokasi -->
+                            <div class="row">
+                              <div class="col-2">
+                                <i class="fas fa-map-marked-alt"></i>
+                              </div>
+                              <div class="col-10">
+                                <h6 class="fs1">Jakarta Utara</h6>
+                              </div>
+                              <div>
+                                <h6 class="fs1"><i class="fas fa-star mx-1"></i>4.9 | Terjual 1rb</h6>
+                              </div>
+                            </div>
+                            <!-- end Lokasi -->
+                          </div>
+                        </div>
+                  </div>
+                  <div class="col-sm-2 d-flex">
+                    <div class="card shadow-sm">
+                        <img src="/assets/images/aspire3fix.jpg" class="card-img-top img-fluid" alt="sensi">
+                        <div class="card-body">
+                          <h6 class="card-text fs1">
+                            Laptop Acer Aspire 3 
+                          </h6>
+                          <div class="row">
+                            <div class="col-3">
+                              <button class="btn btn-success btn-sm fs-0">Cashback</button>
+                            </div>
+                          </div>
+                          <!-- rupiah -->
+                          <div class="row">
+                            <h6 class="fs1">
+                              Rp.6.250.000
+                            </h6>
+                            <h6 class="fs0">Planet Computer</h6>
+                          </div>
+                          <!-- end rupiah -->
+
+                          <!-- Lokasi -->
+                          <div class="row">
+                            <div class="col-2">
+                              <i class="fas fa-map-marked-alt"></i>
+                            </div>
+                            <div class="col-10">
+                              <h6 class="fs1">Tangerang</h6>
+                            </div>
+                            <div>
+                              <h6 class="fs1"><i class="fas fa-star mx-1"></i>4.5 | Terjual 1rb</h6>
+                            </div>
+                          </div>
+                          <!-- end Lokasi -->
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col-sm-2 d-flex">
+                    <div class="card shadow-sm">
+                        <img src="/assets/images/dell.jpg" class="card-img-top img-fluid" alt="sensi">
+                        <div class="card-body">
+                          <h6 class="card-text fs1">
+                            Dell Inspiron 15 Gaming 7567 
+                          </h6>
+                          <div class="row">
+                            <div class="col-3">
+                              <button class="btn btn-success btn-sm fs-0">Cashback</button>
+                            </div>
+                          </div>
+                          <!-- rupiah -->
+                          <div class="row">
+                            <h6 class="fs1">
+                              Rp.11.250.000
+                            </h6>
+                            <h6 class="fs0">Anugerah Computer</h6>
+                          </div>
+                          <!-- end rupiah -->
+
+                          <!-- Lokasi -->
+                          <div class="row">
+                            <div class="col-2">
+                              <i class="fas fa-map-marked-alt"></i>
+                            </div>
+                            <div class="col-10">
+                              <h6 class="fs1">Bandung</h6>
+                            </div>
+                            <div>
+                              <h6 class="fs1"><i class="fas fa-star mx-1"></i>4.8 | Terjual 3rb</h6>
+                            </div>
+                          </div>
+                          <!-- end Lokasi -->
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col-sm-2 d-flex">
+                    <div class="card shadow-sm">
+                        <img src="/assets/images/rog.jpg" class="card-img-top img-fluid" alt="sensi">
+                        <div class="card-body">
+                          <h6 class="card-text fs1">
+                            Asus ROG Zephyrus G15
+                          </h6>
+                          <div class="row">
+                            <div class="col-3">
+                              <button class="btn btn-danger btn-sm fs-0">30%</button>
+                            </div>
+                          </div>
+                          <!-- rupiah -->
+                          <div class="row">
+                            <h6 class="fs1">
+                              Rp.18.250.000
+                            </h6>
+                            <h6 class="fs0">Anugerah Computer</h6>
+                          </div>
+                          <!-- end rupiah -->
+
+                          <!-- Lokasi -->
+                          <div class="row">
+                            <div class="col-2">
+                              <i class="fas fa-map-marked-alt"></i>
+                            </div>
+                            <div class="col-10">
+                              <h6 class="fs1">Bandung</h6>
+                            </div>
+                            <div>
+                              <h6 class="fs1"><i class="fas fa-star mx-1"></i>4.9 | Terjual 3rb</h6>
+                            </div>
+                          </div>
+                          <!-- end Lokasi -->
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col-sm-2 d-flex">
+                    <div class="card shadow-sm">
+                        <img src="/assets/images/lenovo.jpg" class="card-img-top img-fluid" alt="sensi">
+                        <div class="card-body">
+                          <h6 class="card-text fs1">
+                            Lenovo Legion 5 
+                          </h6>
+                          <div class="row">
+                            <div class="col-3">
+                              <button class="btn btn-success btn-sm fs-0">Cashback</button>
+                            </div>
+                          </div>
+                          <!-- rupiah -->
+                          <div class="row">
+                            <h6 class="fs1">
+                              Rp.16.250.000
+                            </h6>
+                            <h6 class="fs0">Mega Computer</h6>
+                          </div>
+                          <!-- end rupiah -->
+
+                          <!-- Lokasi -->
+                          <div class="row">
+                            <div class="col-2">
+                              <i class="fas fa-map-marked-alt"></i>
+                            </div>
+                            <div class="col-10">
+                              <h6 class="fs1">Jakarta Barat</h6>
+                            </div>
+                            <div>
+                              <h6 class="fs1"><i class="fas fa-star mx-1"></i>4.3 | Terjual 1rb</h6>
+                            </div>
+                          </div>
+                          <!-- end Lokasi -->
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col-sm-2 d-flex">
+                    <div class="card shadow-sm">
+                        <img src="/assets/images/mavbookkk.jpg" class="card-img-top img-fluid" alt="sensi">
+                        <div class="card-body">
+                          <h6 class="card-text fs1">
+                            Macbook Pro 16
+                          </h6>
+                          <div class="row">
+                            <div class="col-3">
+                              <button class="btn btn-success btn-sm fs-0">Cashback</button>
+                            </div>
+                          </div>
+                          <!-- rupiah -->
+                          <div class="row">
+                            <h6 class="fs1">
+                              Rp.22.250.000
+                            </h6>
+                            <h6 class="fs0">Mega Computer</h6>
+                          </div>
+                          <!-- end rupiah -->
+
+                          <!-- Lokasi -->
+                          <div class="row">
+                            <div class="col-2">
+                              <i class="fas fa-map-marked-alt"></i>
+                            </div>
+                            <div class="col-10">
+                              <h6 class="fs1">Jakarta Selatan</h6>
+                            </div>
+                            <div>
+                              <h6 class="fs1"><i class="fas fa-star mx-1"></i>4.7 | Terjual 4rb</h6>
+                            </div>
+                          </div>
+                          <!-- end Lokasi -->
+                        </div>
+                      </div>
+                  </div>
+                </div>
+                <!-- akhir row konten laptop -->
+                <hr>
+                <!-- row content Smarthphone -->
+                <div class="row mt-5">
+                  <div class="col-sm">
+                      <h5><b>Terlaris Smartphone</b> <span class="text-success fs2"> Lihat Semua </span></h5>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-2 d-flex">
+                      <div class="card shadow-sm" >
+                          <img src="/assets/images/narzo.jpg" class="card-img-top img-fluid" alt="sensi">
+                          <div class="card-body">
+                            <h6 class="card-text fs1">
+                              Realme Narzo 30A
+                            </h6>
+                            <div class="row">
+                              <div class="col-3">
+                                <button class="btn btn-success btn-sm fs-0">Cashback</button>
+                              </div>
+                            </div>
+                            <!-- rupiah -->
+                            <div class="row">
+                              <h6 class="fs1">
+                                Rp.2.199.000
+                              </h6>
+                              <h6 class="fs0">Gudang Cell</h6>
+                            </div>
+                            <!-- end rupiah -->
+
+                            <!-- Lokasi -->
+                            <div class="row">
+                              <div class="col-2">
+                                <i class="fas fa-map-marked-alt"></i>
+                              </div>
+                              <div class="col-10">
+                                <h6 class="fs1">Jakarta Utara</h6>
+                              </div>
+                              <div>
+                                <h6 class="fs1"><i class="fas fa-star mx-1"></i>4.9 | Terjual 1rb</h6>
+                              </div>
+                            </div>
+                            <!-- end Lokasi -->
+                          </div>
+                        </div>
+                  </div>
+                  <div class="col-sm-2 d-flex">
+                    <div class="card shadow-sm">
+                        <img src="/assets/images/xiaomi10.png" class="card-img-top img-fluid" alt="sensi">
+                        <div class="card-body">
+                          <h6 class="card-text fs1">
+                            Xiaomi Redmi 10 Pro
+                          </h6>
+                          <!-- rupiah -->
+                          <div class="row">
+                            <h6 class="fs1">
+                              Rp.3.699.000
+                            </h6>
+                            <h6 class="fs0">Gudang Cell</h6>
+                          </div>
+                          <!-- end rupiah -->
+
+                          <!-- Lokasi -->
+                          <div class="row">
+                            <div class="col-2">
+                              <i class="fas fa-map-marked-alt"></i>
+                            </div>
+                            <div class="col-10">
+                              <h6 class="fs1">Tangerang</h6>
+                            </div>
+                            <div>
+                              <h6 class="fs1"><i class="fas fa-star mx-1"></i>4.4 | Terjual 1rb</h6>
+                            </div>
+                          </div>
+                          <!-- end Lokasi -->
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col-sm-2 d-flex">
+                    <div class="card shadow-sm">
+                        <img src="/assets/images/redmi7.png" class="card-img-top img-fluid" alt="sensi">
+                        <div class="card-body">
+                          <h6 class="card-text fs1">
+                            Xiaomi Redmi Note 7
+                          </h6>
+                          <div class="row">
+                            <div class="col-3">
+                              <button class="btn btn-success btn-sm fs-0">Cashback</button>
+                            </div>
+                          </div>
+                          <!-- rupiah -->
+                          <div class="row">
+                            <h6 class="fs1">
+                              Rp.2.100.000
+                            </h6>
+                          </div>
+                          <!-- end rupiah -->
+
+                          <!-- Lokasi -->
+                          <div class="row">
+                            <div class="col-2">
+                              <i class="fas fa-map-marked-alt"></i>
+                            </div>
+                            <div class="col-10">
+                              <h6 class="fs1">Bandung</h6>
+                              <h6 class="fs0">AsiaPhone Cell</h6>
+                            </div>
+                            <div>
+                              <h6 class="fs1"><i class="fas fa-star mx-1"></i>4.9 | Terjual 3rb</h6>
+                            </div>
+                          </div>
+                          <!-- end Lokasi -->
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col-sm-2 d-flex">
+                    <div class="card shadow-sm" >
+                        <img src="/assets/images/samsung23.png" class="card-img-top img-fluid" alt="sensi">
+                        <div class="card-body">
+                          <h6 class="card-text fs1">
+                            Samsung Galaxy A32
+                          </h6>
+                          <div class="row">
+                            <div class="col-3">
+                              <button class="btn btn-danger btn-sm fs-0">20%</button>
+                            </div>
+                          </div>
+                          <!-- rupiah -->
+                          <div class="row">
+                            <h6 class="fs1">
+                              Rp.3.799.000
+                            </h6>
+                          </div>
+                          <!-- end rupiah -->
+
+                          <!-- Lokasi -->
+                          <div class="row">
+                            <div class="col-2">
+                              <i class="fas fa-map-marked-alt"></i>
+                            </div>
+                            <div class="col-10">
+                              <h6 class="fs1">Bandung</h6>
+                              <h6 class="fs0">AsiaPhone Cell</h6>
+                            </div>
+                            <div>
+                              <h6 class="fs1"><i class="fas fa-star mx-1"></i>4.3 | Terjual 3rb</h6>
+                            </div>
+                          </div>
+                          <!-- end Lokasi -->
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col-sm-2 d-flex">
+                    <div class="card shadow-sm">
+                        <img src="/assets/images/oppo.jpg" class="card-img-top img-fluid" alt="sensi">
+                        <div class="card-body">
+                          <h6 class="card-text fs1">
+                            Oppo Reno 5 
+                          </h6>
+                          <!-- rupiah -->
+                          <div class="row">
+                            <h6 class="fs1">
+                              Rp.4.250.000
+                            </h6>
+                            <h6 class="fs0">Agung Cell</h6>
+                          </div>
+                          <!-- end rupiah -->
+
+                          <!-- Lokasi -->
+                          <div class="row">
+                            <div class="col-2">
+                              <i class="fas fa-map-marked-alt"></i>
+                            </div>
+                            <div class="col-10">
+                              <h6 class="fs1">Jakarta Timur</h6>
+                            </div>
+                            <div>
+                              <h6 class="fs1"><i class="fas fa-star mx-1"></i>4.6 | Terjual 2rb</h6>
+                            </div>
+                          </div>
+                          <!-- end Lokasi -->
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col-sm-2 d-flex">
+                    <div class="card shadow-sm">
+                        <img src="/assets/images/vivo.jpg" class="card-img-top img-fluid" alt="sensi">
+                        <div class="card-body">
+                          <h6 class="card-text fs1">
+                            Vivo V21
+                          </h6>
+                          <div class="row">
+                            <div class="col-3">
+                              <button class="btn btn-success btn-sm fs-0">Cashback</button>
+                            </div>
+                          </div>
+                          <!-- rupiah -->
+                          <div class="row">
+                            <h6 class="fs1">
+                              Rp.4.399.000
+                            </h6>
+                            <h6 class="fs0">Agung Cell</h6>
+                          </div>
+                          <!-- end rupiah -->
+
+                          <!-- Lokasi -->
+                          <div class="row">
+                            <div class="col-2">
+                              <i class="fas fa-map-marked-alt"></i>
+                            </div>
+                            <div class="col-10">
+                              <h6 class="fs1">Jakarta Selatan</h6>
+                            </div>
+                            <div>
+                              <h6 class="fs1"><i class="fas fa-star mx-1"></i>4.7 | Terjual 4rb</h6>
+                            </div>
+                          </div>
+                          <!-- end Lokasi -->
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <!-- Akhir Konten -->
+        <hr>
+   <!-- Footer -->  
+  <footer class="page-footer font-small elegant-color">
+
+  <!-- Footer menu -->
+  <div class="container text-center text-md-left pt-4 pt-md-5">
+
+    <!-- Grid baris -->
+    <div class="row mt-1 mt-md-0 mb-4 mb-md-0">
+
+      <!-- Grid colom -->
+      <div class="col-sm-3  mt-3 mt-md-0 mb-0 mb-md-4">
+
+        <!-- Links -->
+        <h5 class="text-start fs1"> <b>Tokopedia</b> </h5>
+
+        <ul class="list-unstyled text-start">
+          <li>
+            <a href="#!" class="link-website text-secondary fs1">Tentang Tokopedia</a>
+          </li>
+          <li>
+            <a href="#!" class="link-website text-secondary fs1">Hak Kekayaan Intelektual</a>
+          </li>
+          <li>
+            <a href="#!" class="link-website text-secondary fs1">Karir</a>
+          </li>
+          <li>
+            <a href="#!" class="link-website text-secondary fs1">Blog</a>
+          </li>
+          <li>
+            <a href="#!" class="link-website text-secondary fs1">Bridestory</a>
+          </li>
+          <li>
+            <a href="#!" class="link-website text-secondary fs1">Tokopedia Parents</a>
+          </li>
+          <li>
+            <a href="#!" class="link-website text-secondary fs1">Mitra Blog</a>
+          </li>
+          <li>
+            <a href="#!" class="link-website text-secondary fs1">Toko Points</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid colom -->
+      <div class="col-sm-2  mt-3 mt-md-0 mb-0 mb-md-4">
+        <!-- row Beli -->
+        <div class="row">
+          <div class="col-sm">
+            <h5 class="text-start fs1"><b>Beli</b></h5>
+            <ul class="list-unstyled text-start">
+              <li>
+                <a href="#!" class="link-website text-secondary fs1">Tagihan & Top Up</a>
+              </li>
+              <li>
+                <a href="#!" class="link-website text-secondary fs1">Tukar tambah Handphone</a>
+              </li>
+              <li>
+                <a href="#!" class="link-website text-secondary fs1">Tokopedia COD</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- row Jual -->
+        <div class="row">
+          <div class="col-sm">
+            <h5 class="text-start fs1"><b>Jual</b></h5>
+            <ul class="list-unstyled text-start">
+              <li>
+                <a href="#!" class="link-website text-secondary fs1">Pusat Edukasi Seller</a>
+              </li>
+              <li>
+                <a href="#!" class="link-website text-secondary fs1">Mitra Toppers</a>
+              </li>
+              <li>
+                <a href="#!" class="link-website text-secondary fs1">Daftar Offcial Store</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+      </div>
+      <!-- bantuan dan panduan -->
+      <div class="col-sm-3  mt-3 mt-md-0 mb-0 mb-md-4">
+
+        <!-- Links -->
+        <h5 class="text-start fs1"> <b>Bantuan dan Panduan</b> </h5>
+
+        <ul class="list-unstyled text-start">
+          <li>
+            <a href="#!" class="link-website text-secondary fs1">Tokopedia Care</a>
+          </li>
+          <li>
+            <a href="#!" class="link-website text-secondary fs1">Syarat dan Ketentuan</a>
+          </li>
+          <li>
+            <a href="#!" class="link-website text-secondary fs1">Kebijakan Privasi</a>
+          </li>
+        </ul>
+        <!-- KEamanan -->
+        <h5 class="text-start fs1"> <b>Keamanan</b> </h5>
+        <div class="row">
+          <div class="col-4">
+            <img src="/assets/images/keamanan.JPG" alt="amanan">
+          </div>
+          <div class="col-3">
+            <img src="/assets/images/keamanan2.JPG" alt="amanan">
+          </div>
+        </div>
+        <!-- ikuti kami -->
+        <h5 class="text-start fs1"> <b>Ikuti kami</b> </h5>
+        <div class="row">
+          <div class="col-1">
+            <i class="fab fa-facebook"></i>
+          </div>
+          <div class="col-1">
+            <div class="col-3">
+              <i class="fab fa-twitter-square"></i>
+            </div>
+          </div>
+          <div class="col-1">
+            <i class="fab fa-instagram"></i>          
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+</footer>
+<!-- Footer -->
+    </div>
+
+    <script src="/assets/js/jquery-3.6.0.min.js"></script>
+    <script src="/assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

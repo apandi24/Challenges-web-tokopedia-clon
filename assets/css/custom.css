@@ -1,0 +1,151 @@
+
+/* .navbar{
+    box-shadow: 0px 0.5px 0px rgba(119, 115, 115, 0.8);
+    height: 100px;
+    
+} */
+
+/* custom textdecoration footer */
+.link-website{
+  text-decoration: none;
+}
+/* end custom textdecoration footer  */
+
+/* custom search */
+
+
+.text-start{
+  text-align: start;
+}
+
+.fa-star{
+  color: orange;
+}
+.fs-0 {
+  font-size: 6pt;
+}
+.fs0 {
+  font-size: 8pt;
+}
+.fs1 {
+    font-size: 10pt;
+  }
+.fs2 {
+    font-size: 12pt;
+  }
+.form-control{
+ width: 1360px;   
+}
+.carousel .item {
+    height: 300px;
+  }
+  
+  .item img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-height: 100px;
+  }
+/* custom foto */
+  .s-foto {
+    width: 280px;
+    height: 250px;
+  }
+.card{
+    width: 170px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.card-img-top{
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+    width: 170px;
+    height: 110px;
+}
+
+
+.nav-bawah .nav-link {
+    color: #e9ecef;
+    border-bottom: 3px solid rgba(9, 125, 214, 0);
+  }
+  .nav-bawah .nav-link:hover {
+    color: #ffffff;
+    border-bottom: 3px solid rgba(50, 214, 9, 0.8);
+  }
+  .nav .nav-link.active {
+    color: #fff;
+    border-bottom: 3px solid rgba(253, 253, 253, 0.287);
+  }
+  .form-control2{
+    width: 30px;   
+   }
+
+.tales {
+    width: 100%;
+  }
+
+/* CArousel custom*/
+.carousel-indicators [data-bs-target] {
+  box-sizing: content-box;
+  flex: 0 1 auto;
+  width: 10px; /* change width */
+  height: 10px; /* change height */
+  padding: 0;
+  margin-right: 3px;
+  margin-left: 3px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  opacity: .5;
+  transition: opacity .6s ease;
+  border-radius: 100%;  /* add border-radius */
+  position: relative;
+  left: -600px;
+}
+
+.carousel-inner{
+    width:100%;
+    max-height: 300px !important;
+    border-radius: 8px;
+  }
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    height: 60px;
+    width: 60px;
+    background: white;
+    background-size: 50%, 50%;
+    border-radius: 60%;
+    border: 1px solid white;
+    background-image: none;
+  }
+  
+  .carousel-control-next-icon:after
+  {
+    content: '>';
+    font-size: 45px;
+    color: rgba(116, 116, 116, 0.459);
+  }
+  
+  .carousel-control-prev-icon:after {
+    content: '<';
+    font-size: 45px;
+    color: rgba(116, 116, 116, 0.459);
+  }
+/* form no telepon */
+  .form-no{
+    width: 200px;
+    height: 40px;
+    border-radius: 8px;
+    color: gray;
+  }
+
+  input{
+    border:1px solid #aaa7a7;
+ }
+ /* end form no telepon */
